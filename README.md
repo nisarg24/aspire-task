@@ -44,7 +44,7 @@ php artisan migrate
 php artisan db:seed
 ```
 
-## How to use mini aspire task
+## How to use mini aspire task?
 
 ## Step 1
 - Run command
@@ -61,6 +61,39 @@ php artisan serve
 php artisan loan:emi-payment
 ```
 
+## How to execute test cases?
+
+## Step 1
+- Copy database variable from .env.testing file to .env file
+```
+DB_CONNECTION=sqlite
+DB_HOST=
+DB_PORT=
+DB_DATABASE=database/test.sqlite
+DB_USERNAME=
+DB_PASSWORD=
+```
+
+## Step 2
+- Run database migration command and seeder command
+```
+php artisan migrate
+```
+```
+php artisan db:seed
+```
+
+## Step 3
+- Run command to clear config cache
+```
+php artisan config:clear
+```
+
+## Step 4
+- Run command to execute test cases
+```
+.\vendor\bin\phpunit
+```
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
