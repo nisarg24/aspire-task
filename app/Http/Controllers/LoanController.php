@@ -89,4 +89,23 @@ class LoanController extends Controller
 
         return $data;
     }
+
+    public function index(Request $request)
+    {
+        try {
+            $userId = \Auth::user()->id;
+            $loan = Loan::where('user_id', $userId)
+                ->with('emis')
+                ->get();
+            return $this->success(
+                'Loan and its emi',
+                $loan
+            );
+        } catch (\Exception $e) {
+            return $this->error(
+                403,
+                $e->getMessage()
+            );
+        }
+    }
 }

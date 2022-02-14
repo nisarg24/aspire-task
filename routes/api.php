@@ -35,5 +35,7 @@ Route::group(
         Route::post('/create-loan', [LoanController::class, 'create']);
 
         Route::post('/approve-loan', [LoanController::class, 'approve']);
+
+        Route::post('/loan', [LoanController::class, 'index']);
     }
 );

@@ -204,6 +204,40 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Loan and emi list",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|Lfz3Xc9J1yxt9zkWvE50SSQ8xyV4CFPlSzWJgD2o",
+						"type": "default"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/loan",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"loan"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

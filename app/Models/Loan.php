@@ -25,4 +25,9 @@ class Loan extends Model
         'start_date',
         'end_date'
     ];
+
+    public function emis()
+    {
+        return $this->hasMany(\App\Models\Emi::class, 'loan_id');
+    }
 }
