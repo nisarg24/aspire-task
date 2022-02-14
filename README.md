@@ -24,7 +24,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 ## Installation Step
 
 ## Step 1
-- Go to the repository and run command 
+- Go to the repository and copy .env.example file to .env file and run command 
 ```
 composer install
 ```
