@@ -31,6 +31,14 @@ composer install
 
 ## Step 2
 - Create database and configure it in .env file
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=aspire
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
 ## Step 3
 - Run migration command
