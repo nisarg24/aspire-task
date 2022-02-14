@@ -27,13 +27,43 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Installation Step for mini aspire task
+## Installation Step and How to use mini aspire task
 
-- Clone project
+# Step 1
 - Go to the repository and run command 
 ```
 composer install
 ```
+
+# Step 2
+- Create database and configure it in .env file
+
+# Step 3
+- Run migration command
+```
+php artisan migrate
+```
+
+# Step 4
+- Run command
+```
+php artisan serve
+```
+# Step 5
+- Run seeder command to generate admin user
+```
+php artisan db:seed
+```
+
+# Step 6
+- Use postman collection for the api
+
+# Step 7
+- Run command to emi auto payment
+```
+php artisan loan:emi-payment
+```
+
 
 ## License
 
