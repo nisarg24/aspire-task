@@ -21,49 +21,45 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## Installation Step
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Installation Step and How to use mini aspire task
-
-# Step 1
+## Step 1
 - Go to the repository and run command 
 ```
 composer install
 ```
 
-# Step 2
+## Step 2
 - Create database and configure it in .env file
 
-# Step 3
+## Step 3
 - Run migration command
 ```
 php artisan migrate
 ```
 
-# Step 4
-- Run command
-```
-php artisan serve
-```
-# Step 5
+## Step 4
 - Run seeder command to generate admin user
 ```
 php artisan db:seed
 ```
 
-# Step 6
+## How to use mini aspire task
+
+## Step 1
+- Run command
+```
+php artisan serve
+```
+
+## Step 2
 - Use postman collection for the api
 
-# Step 7
+## Step 3
 - Run command to emi auto payment
 ```
 php artisan loan:emi-payment
 ```
-
 
 ## License
 

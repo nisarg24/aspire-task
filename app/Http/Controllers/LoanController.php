@@ -5,12 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Loan;
 use App\Http\Traits\ResponseTrait;
+use App\Http\Requests\LoanRequest;
 
 class LoanController extends Controller
 {
     use ResponseTrait;
 
-    public function create(Request $request)
+    public function create(LoanRequest $request)
     {
         try {
             $loan = Loan::orderBy('id', 'desc')->first();
