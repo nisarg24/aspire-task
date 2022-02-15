@@ -26,8 +26,8 @@ class LoanRequest extends FormRequest
         return [
             "amount" => "required|numeric|gt:0",
             "term" => "required|numeric|gt:0",
-            "is_month" => "required",
-            "start_date" => "required|date|date_format:Y-m-d"
+            "is_month" => "required|min:0|max:1",
+            "start_date" => "required|date|date_format:Y-m-d|after_or_equal:today"
         ];
     }
 }
